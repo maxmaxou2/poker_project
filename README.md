@@ -23,15 +23,18 @@ PokerProject is a comprehensive poker bot that integrates **Neural Networks**, *
 ## Demo
 
 ### Screen Region UI
-<img src="images/ui_regions.png" width="500">
+<p align="center">
+  <img src="images/ui_regions.png" width="45%">
+</p>
 
 ### Overlay displaying the probability distribution
 
 We see that the interface displays the cards detected (which are indeed the cards displayed).
 The interface displays as well the distribution of probabilities of winning.
-
-<img src="images/ui_probabilities_1.png" width="500">
-<img src="images/ui_probabilities_2.png" width="500">
+<p align="center">
+  <img src="images/ui_probabilities_1.png" width="45%">
+  <img src="images/ui_probabilities_2.png" width="45%">
+</p>
 
 ---
 
