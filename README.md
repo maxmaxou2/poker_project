@@ -1,6 +1,7 @@
 # PokerProject
 Poker Bot, NFSP, Neural Network, Statistical Tools, and Computer Vision for Poker
 
+## IMPORTANT
 DISCLAIMER : This code was written in 2023. I am no longer that shitty at python and package organizing.
 
 Second, thanks to this research paper about poker bot interpretability (that gave me the clever and lightweight game state representation): https://rdcu.be/ee4uS
@@ -29,10 +30,11 @@ This project uses **computer vision** to detect cards on online poker tables (Po
 
 ### Detection Process
 
-The system employs two separate neural network classifiers:
+The system employs three separate neural network classifiers:
 
 1. **Rank Classifier** – Identifies the card's rank (Ace, King, Queen, etc.).
 2. **Suit Classifier** – Determines the card's suit (Hearts, Diamonds, Clubs, Spades).
+3. **Player Classifier** – Determines if a player is folded.
 
 Each classifier includes an **"unknown" category**, allowing the model to return no result when it's uncertain, reducing false detections.
 The neural networks are resnet-18 trained via Pytorch and are stored in ONNX format for usage in production env.

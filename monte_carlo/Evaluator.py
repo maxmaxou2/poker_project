@@ -9,8 +9,8 @@ class Evaluator :
     suits_map = {'h':0, 'c':1, 's':2, 'd':3}
     suits=['h', 'c', 's', 'd']
 
-    ranks_table_path = "./v2/hashtables/ranks.json"
-    suits_table_path = "./v2/hashtables/suits.json"
+    ranks_table_path = "./common/hashtables/ranks.json"
+    suits_table_path = "./common/hashtables/suits.json"
     def __init__(self) :
         self.ranks_dic = readJSON(self.ranks_table_path)
         self.suits_dic = readJSON(self.suits_table_path)

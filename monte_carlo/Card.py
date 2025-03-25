@@ -47,4 +47,4 @@ if __name__ == "__main__" :
             print("\r{:.3f}%, len: {}".format(i/134000000*100, len(dic)), end="")
     
     from common.jsonRW import readJSON, writeJSON
-    writeJSON("./v2/hashtables/suits.json", dic)
+    writeJSON("./common/hashtables/suits.json", dic)
