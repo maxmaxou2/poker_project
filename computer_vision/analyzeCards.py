@@ -7,9 +7,9 @@ import easyocr
 class CardsAnalyzer :
 
     region_order = [4,0,1,2,3,5]
-    path_nbplayers = "./Classes/CustomResnet18_PokerNbPlayers_v1.2.onnx"
-    path_cards = "./Classes/CustomResnet18_PokerValue_v4.0.onnx"
-    path_colors = "./Classes/CustomResnet18_PokerColor_v2.4.onnx"
+    path_nbplayers = "./computer_vision/CustomResnet18_PokerNbPlayers_v1.2.onnx"
+    path_cards = "./computer_vision/CustomResnet18_PokerValue_v4.0.onnx"
+    path_colors = "./computer_vision/CustomResnet18_PokerColor_v2.4.onnx"
 
     def __init__(self, sequence):
         self.model_cards = load_model(self.path_cards)

@@ -61,8 +61,8 @@ def run_inference(model, input):
     return model.run(None, {'input.1': input})
 
 if __name__ == "__main__" :
-    path_cards = "./Classes/Resnet18_PokerValue_v1.0.onnx"
-    path_colors = "./Classes/CustomResnet18_PokerColor_v2.4.onnx"
+    path_cards = "./computer_vision/Resnet18_PokerValue_v1.0.onnx"
+    path_colors = "./computer_vision/CustomResnet18_PokerColor_v2.4.onnx"
     image_path = "./Images/testInference6.jpg"
 
     input = format_input(cv2.imread(image_path))

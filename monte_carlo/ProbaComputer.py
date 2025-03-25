@@ -10,7 +10,7 @@ def getSampleAndRemove(k, list) :
     return list[:k], list[k:]
 
 class ProbaComputer :
-    preflop_stats_path = "./hashtables/preflop_stats.json"
+    preflop_stats_path = "./common/hashtables/preflop_stats.json"
     def __init__(self) :
         self.turnvalues = None#Proba.loadOrSetupBlank(f"D:/Poker Project/poker_project/Data/turnvalues", 133784560)
         self.evaluator = Evaluator()
