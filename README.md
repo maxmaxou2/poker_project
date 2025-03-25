@@ -5,6 +5,7 @@ Poker Bot, NFSP, Neural Network, Statistical Tools, and Computer Vision for Poke
 DISCLAIMER : This code was written in 2023. I am no longer that shitty at python and package organizing.
 
 Second, thanks to this research paper about poker bot interpretability (that gave me the clever and lightweight game state representation): https://rdcu.be/ee4uS
+Third, thanks to [Suffecool Kevin (aka CactusKev)](http://suffe.cool/poker/evaluator.html) and [Paul Senzee](https://senzee.blogspot.com/2006/06/some-perfect-hash.html)
 
 ## Description
 
@@ -69,6 +70,11 @@ This Monte Carlo-based approach helps the poker bot make decisions based on prob
 
 The calculator is implemented as well in JAVA using multithreading to ensure efficiency, but running the JVM is costly/long at startup so use it wisely.
 (The proposed Python implementation is still 10-100 times faster than open-source libraries found online, after benchmark. Source: TrustMe.com)
+
+## Hand Evaluator
+
+The hand evaluation technique is brilliant and not by me (unfortunately) : [Suffecool Kevin (aka CactusKev)](http://suffe.cool/poker/evaluator.html) and was improved by [Paul Senzee using a lookup table](https://senzee.blogspot.com/2006/06/some-perfect-hash.html)
+Very clever way using sum of numbers and precomputed hashtables.
 
 ---
 
